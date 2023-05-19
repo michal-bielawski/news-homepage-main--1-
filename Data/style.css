@@ -1,0 +1,677 @@
+:root{
+    --softorange: hsl(35, 77%, 62%);
+    --softred: hsl(5, 85%, 63%);
+    --offwhite: hsl(36, 100%, 99%);
+    --grayBlue: hsl(233, 8%, 79%);
+    --darkBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+
+    font-size: 15px;
+}
+
+body{
+    background-color: var(--offwhite);
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-article-button:hover{
+    background-color: var(--veryDarkBlue);
+    color: var(--offwhite);
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    color: var(--softred);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 599px) {
+
+    .content{
+        padding: 0 4.5% 0 4.5%;
+     }
+
+     .items{
+        font-size: 18px;
+        margin-top: 122px;
+    }
+    
+    .menu-item{
+        font-size: 18px;
+        margin-top: 30px;
+        color: var(--veryDarkBlue);
+    }
+
+    .standard-menu{
+        display: none
+     }
+
+    .first-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    
+        background-image: url(../assets/images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size:contain;
+    
+    }
+    
+    .image-container{
+        display: flex;
+        width: 100%;
+        min-width: 185px;
+        padding-top: 90%;
+        position: relative;
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+
+    .main-article{
+        padding: 26px 0;
+    }
+    
+    .main-article-title{
+        font-weight: 800;
+        color: var(--veryDarkBlue);
+        font-size: 40px;
+        margin-bottom: 26px;
+    }
+    
+    .main-article-text{
+        font-weight: 400;
+        color: var(--darkBlue);
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .main-article-button{
+        margin-top: 10vw;
+    }
+
+    .news{
+        margin-top: 38px;
+        margin-bottom: 64px;
+        width: 100%;
+        min-height: 490px;
+        padding: 23px;
+        background-color: var(--veryDarkBlue);
+        box-sizing: border-box;
+    }
+    
+    .new-title{
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--softorange);
+    }
+
+    .new-article{
+        margin: 43px 0 43px 0;
+    }
+    
+    .new-article p.title{
+        color: var(--offwhite);
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .new-article p.text{
+        color: var(--grayBlue);
+        line-height: 1.5;
+    }
+
+    .posts{
+        width: 100%;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .post{
+        display: flex;
+        justify-content:space-around;
+        height: 40vw;
+        margin-bottom: 10vw;
+    }
+    
+    .post-image-1{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 30vw;
+        background-image: url(../assets/images/image-retro-pcs.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-2{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 30vw;
+        background-image: url(../assets/images/image-top-laptops.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-3{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 30vw;
+        background-image: url(../assets/images/image-gaming-growth.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-content{
+        margin-left: 24px;
+        width: 208px;
+    }
+    
+    .post-number{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--grayBlue);
+    }
+    
+    .post-title{
+        margin-top: 1vw;
+        margin-bottom: 3%;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--veryDarkBlue);
+    }
+    
+    .post-text{
+        color: var(--darkBlue);
+        line-height: 1.6;
+    }
+
+    .article-multimedia{
+        padding: 8vw 2vw 0 2vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 28px 0;
+    height: 40px;
+}
+
+
+
+
+
+.main-article-button{
+    background-color: var(--softred);
+    color: var(--offwhite);
+    letter-spacing: 5px;
+    font-weight: 400;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 185px;
+    height: 48px;
+}
+
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--grayBlue);
+    margin: 0;
+}
+
+
+
+footer{
+    height: 80px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1299px) {
+
+    .content{
+        padding: 0 4.5% 0 4.5%;
+     }
+
+     .standard-menu{
+        display: none
+     }
+
+     .items{
+        font-size: 18px;
+        margin-top: 122px;
+    }
+    
+    .menu-item{
+        font-size: 18px;
+        margin-top: 30px;
+        color: var(--veryDarkBlue);
+    }
+
+    .first-img{
+        background-image: url(../assets/images/image-web-3-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        min-height: 40vw;
+        overflow: hidden;  
+    }
+
+    
+    
+    .image-container{
+        width: 100%;
+    }
+
+    .main-article{
+        padding: 26px 0;
+    }
+    
+    .main-article-title{
+        font-weight: 800;
+        color: var(--veryDarkBlue);
+        font-size: 40px;
+        margin-bottom: 26px;
+    }
+    
+    .main-article-text{
+        font-weight: 400;
+        color: var(--darkBlue);
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .main-article-button{
+        margin-top: 5vw;
+    }
+
+    .news{
+        margin-top: 38px;
+        margin-bottom: 80px;
+        width: 100%;
+        min-height: 490px;
+        padding: 23px;
+        background-color: var(--veryDarkBlue);
+        box-sizing: border-box;
+    }
+    
+    .new-title{
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--softorange);
+    }
+
+    .new-article{
+        margin: 43px 0 43px 0;
+    }
+    
+    .new-article p.title{
+        color: var(--offwhite);
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .new-article p.text{
+        color: var(--grayBlue);
+        line-height: 1.5;
+    }
+    .posts{
+        width: 100%;
+        min-height: 450px;
+    }
+    
+    .post{
+        display: flex;
+        justify-content:center;
+        height: 40vw;
+    }
+    
+    .post-image-1{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 20vw;
+        background-image: url(../assets/images/image-retro-pcs.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-2{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 20vw;
+        background-image: url(../assets/images/image-top-laptops.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-3{
+        height:auto;
+        min-width: 100px;
+        min-height: 130px;
+        width: 20vw;
+        background-image: url(../assets/images/image-gaming-growth.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-content{
+        margin-left: 24px;
+        width: 208px;
+    }
+    
+    .post-number{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--grayBlue);
+    }
+    
+    .post-title{
+        margin-top: 1vw;
+        margin-bottom: 3%;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--veryDarkBlue);
+    }
+    
+    .post-text{
+        color: var(--darkBlue);
+        line-height: 1.6;
+    }
+
+    .article-multimedia{
+        padding: 8vw 2vw 0 2vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+    body{
+        padding: 4vw 11.5vw;
+
+    }
+    
+    .main-article-container, .news{
+        float: left;
+    }
+
+    .posts{
+        clear: both;
+    }
+
+    .first-img{
+        background-image: url(../assets/images/image-web-3-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 100%;
+        min-height: 21vw;
+        overflow: hidden;
+    
+    }
+    
+    .image-container{
+        clear: both;
+    }
+
+    .main-article-container{
+        width: 49vw;
+        height: 38vw;
+        margin: 0 2vw 0 0;
+
+    }
+
+    .main-article{
+        padding: 1.8vw 0;
+    }
+    
+    .main-article-title{
+        width: 21vw;
+        float: left;
+        font-weight: 800;
+        color: var(--veryDarkBlue);
+        font-size: 4vw;
+        line-height: 1;
+    }
+    
+    .main-article-text{
+        width: 26.5vw;
+        float: left;
+        font-weight: 400;
+        color: var(--darkBlue);
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .main-article{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-article-button{
+        margin-top: 3vw;
+        width: 13vw;
+        height: 3.5vw;
+        font-size: 1.1vw
+    }
+
+    .news{
+        margin: 0;
+        width: 21vw;
+        height: 38vw;
+        padding: 1vw 1.7vw 0 1.7vw;
+        background-color: var(--veryDarkBlue);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .new-title{
+        font-weight: 700;
+        font-size: 34px;
+        color: var(--softorange);
+    }
+
+    
+    .new-article p.title{
+        color: var(--offwhite);
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .new-article p.text{
+        color: var(--grayBlue);
+        line-height: 1.8;
+    }
+
+    .posts{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .post{
+        display: flex;
+        justify-content:space-around;
+        height: 10vw;
+        margin-top: 5vw;
+    }
+    
+    .post-image-1{
+        height:auto;
+        width: 9vw;
+        background-image: url(../assets/images/image-retro-pcs.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-2{
+        height:auto;
+        width: 9vw;
+        background-image: url(../assets/images/image-top-laptops.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-image-3{
+        height:auto;
+        width: 9vw;
+        background-image: url(../assets/images/image-gaming-growth.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+    
+    .post-content{
+        margin-left: 12px;
+        width: 208px;
+    }
+    
+    .post-number{
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--grayBlue);
+    }
+    
+    .post-title{
+        margin-top: 0.6vw;
+        margin-bottom: 3%;
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--veryDarkBlue);
+    }
+    
+    .post-text{
+        color: var(--darkBlue);
+        line-height: 1.6;
+    }
+
+    .hamburger{
+        visibility: hidden;
+    }
+
+    .standard-menu{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    .menu-item{
+        margin-right: 2vw;
+        color: var(--darkBlue);
+        cursor: pointer;
+    }
+
+    .article-multimedia{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .posts-multimedia{
+        display: flex;
+        flex-direction: row;
+        margin-top: 200px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    
+}
+
+.menu{
+    width: 53vw;
+    height: 100%;
+    position:fixed;
+    float: right;
+    background-color: var(--offwhite);
+    z-index:2;
+    right: 0;
+    top: 0;
+    padding: 28px 21px;
+
+    display: none;
+}
+
+.close-btn{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+video{
+    float: left;
+    margin: 0;
+    width: 100%;
+    height:32vw;
+}
+.article-multimedia{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.text-multimedia{
+    align-items: center;
+}
+
+.posts-multimedia{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: left;
+    align-items: baseline;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    width: 100%;
+}
+
+.content-multimedia{
+    width: 58vw;
+    margin-bottom: 2vw;
+}
